@@ -1,17 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <title></title>
-</head>
-<body>
-  <ul>
-    <li><a href="http://yahoo.co.jp"></a></>
-    <li><a href="http://google.com"></a></li>
-    <li><a href="#">test</a></li>
-  </ul>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="dist/semantic.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="ui thin sidebar inverted vertical menu">
+      <a class="item">
+        実委人紹介
+      </a>
+      <a class="item">
+        委員会概要
+      </a>
+      <a class="item">
+        連絡先・協賛
+      </a>
+      <a class="item">
+        ブログ
+      </a>
+    </div>
+    <div class="pusher">
+      <header>
+        <div class="ui top fixed menu" >
+          <div class="item" id="menu-open">
+            <i class="material-icons">menu</i>
+          </div>
+          <div class="header item">雙峰祭実行委員会</div>
+        </div>
+      </header>
+      <main class="ui container">
+        <img src="images/soho_logo.png" alt="" class="ui image medium centered">
+        <header class="ui fluid four item menu">
+          <a href="#" class="item">委員会概要</a>
+          <a href="#" class="item">協賛企業</a>
+          <a href="#" class="item">連絡先</a>
+          <a href="#" class="item">実委人紹介</a>
+        </header>
+        <div class="ui segment">
+          <h2 class="ui dividing header">
+            在学生向けトピック
+          </h2>
+          <div class="ui stackable four column grid doubling">
+            <div class="column">
+              <div class="ui fluid card centered">
+                <a href="./form.html" class="image">
+                  <img src="images/sos.jpg" alt="">
+                </a >
+                <div class="content">
+                  <a href="./form.html" class="header">SOS</a>
+                  <div class="meta">
+                    1145/1/4
+                  </div>
+                  <div class="description">
+                    雙峰祭オンラインシステム
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="ui fluid card centered">
+                <div class="image">
+                  <img src="images/morinosu.jpg" alt="">
+                </div>
+                <div class="content">
+                  <a href="./form.html" class="header">マスキャラ募集</a>
+                  <div class="meta">
+                    1145/1/4
+                  </div>
+                  <div class="description">
+                    マスキャラを募集します。
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="ui fluid card centered">
+                <div class="image">
+                  <img src="images/souhou.jpg" alt="">
+                </div>
+                <div class="content">
+                  <a href="#" class="header">新歓</a>
+                  <div class="meta">
+                    1145/1/4
+                  </div>
+                  <div class="description">
+                    新歓情報はこちら。
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="ui fluid card centered">
+                <div class="image">
+                  <img src="images/souhou.jpg" alt="">
+                </div>
+                <div class="content">
+                  <a href="./form.html" class="header">MC募集</a>
+                  <div class="meta">
+                    1145/1/4
+                  </div>
+                  <div class="description">
+                    MCに興味がある人はぜひエントリーだけでも！
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui segment">
+          <h2 class="ui dividing header">
+            NEWS
+          </h2>
+          <div class="ui divided items">
+            <div class="item">
+              <div class="content">
+                <div class="header">新入生が加入しました！</div>
+                <div class="meta">
+                  <span>2017/06/20</span>
+                </div>
+                <div class="description">
+                  <p>今年は5000兆人の新入生が加入してくれました！そのうち114514人は情報システム局です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <div class="header">情報システム局長が亡くなりました</div>
+                <div class="meta">
+                  <span>2017/06/20</span>
+                </div>
+                <div class="description">
+                  <p>本日、情報システム局長の佐々木恭平が課題から逃れるため別の世界へと</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript">
+      $('#menu-open').click(function(){
+        $('.ui.sidebar').sidebar('toggle');
+      });
+    </script>
+  </body>
 </html>
