@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>雙峰祭実行委員会</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="../dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="../dist/semantic.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+
+  </head>
+  <body>
+    <div class="ui thin sidebar inverted vertical menu">
+      <a class="item">
+        実委人紹介
+      </a>
+      <a class="item">
+        委員会概要
+      </a>
+      <a class="item">
+        連絡先・協賛
+      </a>
+      <a class="item">
+        ブログ
+      </a>
+    </div>
+    <div class="pusher">
+      <header>
+        <div class="ui top fixed menu" >
+          <div class="item" id="menu-open">
+            <i class="material-icons">menu</i>
+          </div>
+          <a href="../index.html" class="header item">雙峰祭実行委員会</a>
+        </div>
+      </header>
+      <main class="ui container">
+        <nav>
+          <div class="ui breadcrumb">
+            <a href="../index.html" class="section">Home</a>
+            <i class="right angle icon divider"></i>
+            <div class="section">新歓情報</div>
+          </div>
+        </nav>
+        <h2 class="ui header">
+          新歓情報
+          <div class="ui sub header">
+            今年も新歓の季節がやってきた！
+          </div>
+        </h2>
+        <div class="ui segment">
+          <p>ここには新歓の情報が表示されることになります</p>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript">
+      $('#menu-open').click(function(){
+        $('.ui.sidebar').sidebar('toggle');
+      });
+    </script>
+  </body>
+</html>
